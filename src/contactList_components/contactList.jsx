@@ -26,7 +26,7 @@ let ContactList =(props)=>{
                     {
                        contacts.length > 0 && contacts.map(contact =>{
                            return(
-                               <tr key={contact.id} onMouseOver={()=> selectedContact(contact)}>
+                               <tr key={contact.id} onClick={()=> selectedContact(contact)}>
                                    <td>{contact.id}</td>
                                    <td>{contact.name}</td>
                                    <td>{contact.email}</td>
